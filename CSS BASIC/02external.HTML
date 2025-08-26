@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Container Demo</title>
+  <style>
+    /* Optional: predictable sizing */
+    *, *::before, *::after { box-sizing: border-box; }
+
+    :root {
+      --max: 1100px;     /* max width of the container */
+      --pad: 16px;       /* side padding on small screens */
+      --gap: 16px;
+      --bg: #f7f7fb;
+      --card: #fff;
+      --border: #e6e6f0;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: var(--bg);
+      color: #111;
+      line-height: 1.5;
+    }
+
+    /* The container */
+    .container {
+      max-width: var(--max);
+      margin-inline: auto;     /* centers the container */
+      padding-inline: var(--pad);
+    }
+
+    header, footer {
+      border-block-end: 1px solid var(--border);
+      background: #fff;
+    }
+    footer { border-block-start: 1px solid var(--border); border-block-end: 0; }
+
+    header .container, footer .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-block: 14px;
+    }
+
+    /* Example grid inside a container */
+    .grid {
+      display: grid;
+      gap: var(--gap);
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      padding-block: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.04);
+    }
+
+    /* Optional: a “narrow” variant for long text pages */
+    .container.narrow { --max: 750px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <strong>My Site</strong>
+      <nav>Home · About · Contact</nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Containers with HTML & CSS</h1>
+    <p>This area is limited by <code>max-width</code> and centered with <code>margin: 0 auto</code>.</p>
+
+    <section class="grid">
+      <article class="card">
+        <h3>Card 1</h3>
+        <p>Content inside a responsive grid.</p>
+      </article>
+      <article class="card">
+        <h3>Card 2</h3>
+        <p>Auto-fit c
