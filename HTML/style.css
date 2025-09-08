@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    font-family: monospace;
+    font-size: 20px;
+    background-color: #f0f8ff;
+}
+header{
+    height: 100vh;
+    background-color: #2196f2;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.button{
+    height: 40px;
+    width: 104px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+header h1{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;  
+    gap: 20px;                
+    margin-top: 20px;
+}
+h1{
+    color: tomato;
+    font-size: 50px;
+    
+}
+.container2{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-image-outset: 0%;
+
+}
+.container2 img {
+    width: 300px;      /* set width */
+    height: auto;      /* keep aspect ratio */
+    border-radius: 10px;  /* optional: rounded corners */
+    display: block;
+    margin: 0 auto;    /* center the image */
+}
+
+.container3{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    list-style-position: inside;
+}
+.container4{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    
+}
+.contact{
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+.container5{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+button :hover{
+    color: white;
+    background-color: yellow
+    
+}
+img{
+    height: 200px;
+}
+section{
+    height: 100vh;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+main{
+    padding: 20px;
+}
+.submit{
+    height: 40px;
+    width: 104px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    background-color: #2196f2;
+}
+.submit:hover{
+    background-color: #036dbf;
+    color: red
+}
+.input{
+    border-radius: 2px;
+    border: 1px solid gray;
+    
+    height: 25px;
+}
+.fixedbutton{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #2196f2;
+    color: red;
+}
+footer{
+    height: 124px;
+    background-color: sloid gray;
+    color: red;
+}

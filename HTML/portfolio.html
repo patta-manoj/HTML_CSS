@@ -1,147 +1,108 @@
 <!DOCTYPE html>
-     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HTMLSTRUCTURE</title>
-    </head>
-    <body>
-        
-        <header>
-            <h1>
-                welcome to my portfolio
-            </h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMLSTRUCTURE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-            <a href="">
-                <button>
-                    About
-                </button>
-            </a>
-            <a href="">
-                <button>
-                    Skills
-                </button>
-            </a>
-            <a href="">
-                <button>
-                    Project
-                </button>
-            </a>
-            <a href="">
-                <button>
-                    Contact
-                </button>
-            </a>
-        </header>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <h1>welcome to my portfolio</h1>
+            <div style="display: flex; gap: 5px; justify-content: center;">
+                <a href=""><button class="button">About</button></a>
+                <a href=""><button class="button">Skills</button></a>
+                <a href=""><button class="button">Project</button></a>
+                <a href=""><button class="button">Contact</button></a>
+            </div>
+        </div>
+    </header>
 
+    <!-- MAIN -->
+    <main>
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <div class="container2">  
+                <h1>MANOJ PATTA</h1>
+                <img src="images/dhoni.webp" alt="MSD">
+                <p>
+                    <b>Final-year B.Tech student</b> with certifications in <em>AWS</em> and <em>Salesforce</em>.<br>
+                    <b>Developed</b> a full-stack Java project titled <em>"Share with Me"</em>.<br>
+                    <b>Skilled in</b> communication, time management, and <em>daily tech learning</em>.<br>
+                    <b>Passionate about</b> sports and continuous growth in <em>cloud and development</em>.
+                </p>
+            </div>
+        </section>
 
-          <main>
-            <section id="about">
-                 <h1>
-            MANOJ PATTA
-        </h1>
-         <p>
-            <b>Final-year B.Tech student</b> with certifications in <em>AWS</em> and <em>Salesforce</em>.<br>
-            <b>Developed</b> a full-stack Java project titled <em>"Share with Me"</em>.<br>
-            <b>Skilled in</b> communication, time management, and <em>daily tech learning</em>.<br>
-            <b>Passionate about</b> sports and continuous growth in <em>cloud and development</em>.<br>
-        </p>
+        <!-- SKILLS SECTION -->
+        <section id="skills">
+            <div class="container3">
+                <h1>MY SKILLS</h1>
+                <ol>
+                    <li>PYTHON</li>
+                    <li>JAVA</li>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                </ol>
+            </div>
+        </section>
 
-        <h1>
+        <!-- PROJECT SECTION -->
+        <section id="project">
+            <div class="container">
+                <h1>Projects Coming Soon...</h1>
+            </div>
+        </section>
 
-            </section>
-            <section id="Skills">
-                 <h1>
-            MY SKILLS
-        </h1>
-        <OL>
-            <LI>PYTHON</LI>
-            <LI>JAVA</LI>
-            <LI>CSS</LI>
-            <LI>HTML</LI>
-        </OL>
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <div class="container4">
+                <form action="">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
 
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
 
+                    <b>Choose your gender:</b><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <br><br>
 
-            </section>
-            <section id="project">
+                    <b>Select your interest:</b><br>
+                    <input type="checkbox" id="coding" name="interest" value="coding">
+                    <label for="coding">Coding</label>
+                    <input type="checkbox" id="reading" name="interest" value="reading">
+                    <label for="reading">Reading</label>
+                    <br><br>
 
+                    <b>BIO up to 300 words:</b><br>
+                    <textarea id="bio" name="bio" rows="4" cols="40"></textarea><br><br>
 
-            </section>
-            <section id="Contact">
-                 <form action="">
-            <label form="name">name:</label>
-            <input type="text">
-            <br>
+                    <label for="range">Bio Strength:</label>
+                    <input type="range" id="range" name="range"><br><br>
 
+                    
+                    <button type="submit" class="submit">Submit</button>
+                    
+                </form>
+            </div>
 
+            <button class="fixedbutton">UP</button>
+        </section>
+    </main>
 
-            <label form="email">Email:</label>
-            <input type="email">
-            <br>
-        
-            <b>choose your gender
-            <input type="radio" id="male" value="male">
-            <label for="male">male</label>
-            <input type="radio" id="female" value="female">
-            <label for="female">female</label>
-            </b>
-            <br>
-
-            <b>select your interest
-            <input type="checkbox" id="coding" value="coding">
-            <label for="coding">coding</label>
-            <input type="checkbox" id="reading" value="reading">
-            <label for="reading">reading</label>
-            </b>
-            <br>
-
-
-            <b>BIO up to 300 words </b>
-            <input type="text">
-            <label for="bio">bio</label>
-            <input type="range">
-            <br>
-
-            <button>submit</button>
-
-
-            </section>
-
-          </main>
-          <footer>
-            <p>07 DHONI cool</p>
-
-
-
-        </footer>
-           
-        
-
+    <!-- FOOTER -->
+    <footer>
+        <p>07 DHONI cool</p>
         <h1>Contact Me</h1>
         <p>always stay happy with me</p>
+    </footer>
 
-
-       
-            
-
-
-
-        
-
-
-            
-
-            
-        </form>
-
-          
-
-
-
-        </form>
-
-    </body>
+</body>
 </html>
-
-
-
