@@ -147,3 +147,29 @@ footer{
     background-color: sloid gray;
     color: red;
 }
+.student{
+    text-align: center;
+    background-color: bisque;
+    flex-direction: column;
+    margin: 5px;
+}
+.body{
+       display: flex;
+            justify-content: center;  /* horizontal center */
+            align-items: center;      /* vertical center */
+            height: 100vh;            /* full screen height */
+            margin-top: 25px;
+            background-color: #eaf2f8; /* just to match your background */
+            flex-direction: column; 
+}
+.table{
+    
+       display: flex;
+            justify-content: center;  /* horizontal center */
+            align-items: center;      /* vertical center */
+            height: 100vh;            /* full screen height */
+            margin: 0;
+            background-color: #eaf2f8; /* just to match your background */
+            flex-direction: column; 
+
+}
